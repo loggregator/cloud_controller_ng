@@ -46,6 +46,7 @@ module Logcache
     private
 
     def get_container_metrics(start_time:, end_time:, source_guid:)
+      # Error handling here maybe?
       @logcache_client.container_metrics(
         start_time: start_time,
         end_time: end_time,
